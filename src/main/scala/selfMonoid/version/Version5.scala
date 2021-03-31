@@ -18,8 +18,4 @@ object Version5 {
     override def combine(x: Int, y: Int): Int = x + y
   }
 
-  def main(args: Array[String]): Unit = {
-    println(fold(List(1, 2, 3, 4, 5)))
-  }
-
 }
