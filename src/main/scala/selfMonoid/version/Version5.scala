@@ -13,9 +13,4 @@ object Version5 {
     f.foldleft(list)(m.zero)(m.combine)
   }
 
-  implicit val addMonoid: SelfMonoid[Int] = new SelfMonoid[Int] {
-    override def zero: Int = 0
-    override def combine(x: Int, y: Int): Int = x + y
-  }
-
 }
