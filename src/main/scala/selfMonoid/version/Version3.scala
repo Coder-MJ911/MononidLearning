@@ -11,7 +11,5 @@ object Version3 {
     override def combine(x: String, y: String): String = x concat y
   }
 
-  def main(args: Array[String]): Unit = {
-    println(fold[String](List("Jingjun","Qilin","Hongxing","Xiaonan","Yunpeng","Yinjun","Jiajie"), stringMonoid))
-  }
+
 }
