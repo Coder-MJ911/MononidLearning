@@ -19,11 +19,11 @@ class Version5Spec extends Specification{
     override def foldleft[A](fa: Set[A])(zero: A)(f: (A, A) => A): A = fa.foldLeft(zero)(f)
   }
 
-  "Version 5 whole context bound" in {
+  "Version 5 context bound to optimize other parameters of the method fro list" in {
     fold(List(1, 2, 3, 4, 5)) shouldEqual 15
   }
 
-  "v" in {
+  "Version 5 context bound to optimize other parameters of the method for set" in {
     fold(Set(1, 2, 3, 4, 5, 6)) shouldEqual 21
   }
 
